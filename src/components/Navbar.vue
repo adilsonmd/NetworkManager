@@ -1,44 +1,36 @@
 <template>
-    <nav class="navbar">
-        <ul class="navbar-list">
+    <nav class="nav">
+        <ul class="navbar-list d-flex justify-content-between">
             <li>
-                <button>Control Bar</button>
+                <button class="btn btn-dark">Control Bar</button>
 
                 <img src="" alt="">
             </li>
             <li>
                 <!-- Search bar -->
-                <div class="search-area">
-                    <textarea class="search-bar" name="" id="" rows="1"></textarea>
-                    <button>Search</button>
+                <div class="search-area d-flex">
+                    <textarea class="form-control search-bar" name="" id="" rows="1"></textarea>
+                    <button class="btn btn-dark">Search</button>
                 </div>
                 <!-- logo -->
             </li>
             <li>
-                <button>OK</button>
+                <button class="btn btn-dark">OK</button>
             </li>
         </ul>
     </nav>
-
 </template>
 
 <script>
-
 </script>
+
 <style scoped>
 .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+    min-height: 40px;
 }
 
 .navbar-list {
-    margin-inline: 1rem;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     list-style: none;
 }
 
@@ -49,8 +41,8 @@
 }
 
 .search-bar {
+    resize: none;
     border-radius: 5px;
     border: 1px solid #babaca;
-    resize: none;
 }
 </style>
